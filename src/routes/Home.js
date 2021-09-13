@@ -17,6 +17,9 @@ class Home extends React.Component {
     } = await axios.get(
       "https://yts-proxy.now.sh/list_movies.json?sort_by=rating"
     );
+    movies.forEach((movie) => {
+      movie.google = `https://www.google.co.kr/search?q=${movie.title}`;
+    });
     this.setState({ movies, isLoading: false });
   };
 
@@ -43,6 +46,7 @@ class Home extends React.Component {
                 summary={movie.summary}
                 poster={movie.medium_cover_image}
                 genres={movie.genres}
+                google={movie.google}
               />
             ))}
           </div>

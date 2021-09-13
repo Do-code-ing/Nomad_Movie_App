@@ -1,0 +1,22 @@
+React
+
+npx create-react-app {project name}
+
+component: App.js
+JSX: html + js (only in React)
+PropTypes: check a props type, npm i prop-types
+function component: work with return
+class component: class App extends React.Componet.render() {}, work with render method
+state: object, doesn't be chaged
+setState: refresh view with new state with call render() 
+component life cycle method: mounting: born, updating: update, unmounting: dead
+fetch: nomad doesn't like it
+axios: is a library of http for browser, Node.js, a Promise API. a layer top on the fetch, npm i axios
+yts: illegal movie torrent, https://yts-proxy.now.sh/list_movies.json
+gh-pages: npm i gh-pages, write "homepage": url, in package.json
+"deploy": "gh-pages -d build" -> upload build folder
+"predeploy": "npm run build": -> before running when run deploy
+react router dom: npm i react-router-dom
+exact: only path value, rendered
+Link: inside of router, page changing<Link to="/"> instead of <a href="/">
+route's props:
